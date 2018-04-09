@@ -3,6 +3,8 @@ n64convert
 
 This small utility allows you to convert among various N64 ROM formats.
 
+![screenshot.png](https://i.imgur.com/3Guw3QU.png)
+
 The tool supports the following formats:
 
 - **.N64:** Little-endian format (makerom / No-Intro)
@@ -12,7 +14,7 @@ The tool supports the following formats:
 Usage:
 ---
 
-The program requires two parameters - the input file and the output file. The output files is determined by its extension, use .n64, .v64 or .z64.
+The program requires two parameters - the input file and the output file. The output file's format is determined by its extension, use .n64, .v64 or .z64.
 
 **\*nix:**
 
