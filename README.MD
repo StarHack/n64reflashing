@@ -9,7 +9,7 @@ As far as NTSC ROM's are concerned: some games might flicker on a PAL TV. One ma
 - **UltraCIC swap:** if true, one may reflash the ATtiny25 on the reproduction cartridge to a different UltraCIC version in order to make the game work. 
 - **Required flash memory size:** if true, this game can't be played on a reproduction cartridge with a different flash memory size (it won't boot / black screen). For instance some 16 MB games won't boot on a 64 MB repro despite using the correct CIC version.
 
-| Name        | Tested ROM    | CIC   | motetIII | UltraCIC swap | Required flash memory size | Notes
+| Title        | Tested ROM    | CIC   | motetIII | UltraCIC swap | Required flash memory size | Notes
 | ------------- |:-------------:| :-----:| :-----: | :-----: | :-----: | :-----:
 | Banjo-Kazooie | Banjo-Kazooie (E) (M3) [f2].z64 | CIC-NUS-7103 | Yes | - | &geq; 16 MB | Works
 | Banjo-Tooie | Banjo-Tooie (E) (M4) [!].z64 | CIC-NUS-7105 | No | Yes | &geq; 32 MB |Works. Use 7105.
@@ -37,11 +37,11 @@ As far as NTSC ROM's are concerned: some games might flicker on a PAL TV. One ma
 | Snowboard Kids | Snowboard Kids (E) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB | Works
 | Snowboard Kids 2 | Snowboard Kids 2 (E) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB | Works
 | South Park: Ralley | South Park Rally (E) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB | Works
-| Star Wars: Shadows of the Empire | Star Wars - Shadows of the Empire (E) \[!\].z64 | CIC-NUS-7101 | - | - | &geq; 16 MB | Untested.
+| Star Wars: Shadows of the Empire | Star Wars - Shadows of the Empire (E) \[!\].z64 | CIC-NUS-7101 | - | - | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise gets stuck at license text.
 | Super Mario 64 | Super Mario 64 (E) (M3) [!].z64 | CIC-NUS-7101 | No | No | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise won't boot.
 | Super Smash Bros.      | Super Smash Bros. (E) (M3) [f1].z64       |   CIC-NUS-7103 | No | Yes | &geq; 32 MB | Works. The crack changes the CIC version to 7101.
 | The Legend of Zelda: Majora's Mask | Legend of Zelda, The - Majora's Mask (E) (M4) (V1.0) \[f1\].z64 | CIC-NUS-7105 | ??? | ??? | &geq; 32 MB | Untested. The crack changes the CIC version to 7101.
 | The Legend of Zelda: Ocarina of Time | Legend of Zelda, The - Ocarina of Time (E) (M3) (V1.1) \[!\].z64 | CIC-NUS-7105 | ??? | ??? | &geq; 32 MB | Untested.
 | The Legend of Zelda: Ocarina of Time Master Quest | Legend of Zelda, The - Ocarina of Time - Master Quest (E) (GC) \[!\].z64 | CIC-NUS-7105 | ??? | ??? | &geq; 32 MB | Untested.
-| Wave Race 64 | Wave Race 64 (E) (M2) \[!\].z64 | CIC-NUS-7101 | - | - | &geq; 16 MB | Untested.
+| Wave Race 64 | Wave Race 64 (E) (M2) \[!\].z64 | CIC-NUS-7101 | - | - | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise gets stuck at Nintendo logo.
 | Worms Armageddon | Worms - Armageddon (E) (M6) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB | Works
