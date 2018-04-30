@@ -11,28 +11,37 @@ As far as NTSC ROM's are concerned: some games might flicker on a PAL TV. One ma
 
 | Title        | Tested ROM    | CIC   | motetIII | UltraCIC swap | Required flash memory size | Notes
 | ------------- |:-------------:| :-----:| :-----: | :-----: | :-----: | :-----:
-| Banjo-Kazooie | Banjo-Kazooie (E) (M3) [f2].z64 | CIC-NUS-7103 | Yes | - | &geq; 16 MB | Works
+| 1080 Snowboarding | 1080 Snowboarding (E) (M4) \[f1\].z64 | CIC-NUS-7103 | ??? | ??? | &geq; 16 MB | Untested. Crack changes CIC to 7101.
+| Banjo-Kazooie | Banjo-Kazooie (E) (M3) [f2].z64 | CIC-NUS-7103 | Yes | - | &geq; 16 MB | Works. Crack changes CIC to 7101.
 | Banjo-Tooie | Banjo-Tooie (E) (M4) [!].z64 | CIC-NUS-7105 | No | Yes | &geq; 32 MB |Works. Use 7105.
 | Body Harvest | Body Harvest (E) (M3) [!].z64 | CIC-NUS-7101 | - | No | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise won't boot.
 | Bomberman 64 | Bomberman 64 (E) [!].z64 | CIC-NUS-7101 | - | No | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise won't work.
 | Bomberman 64 - The Second Attack! | Bomberman 64 - The Second Attack! (U) \[t1\]\[f1\] (PAL-NTSC).z64 | CIC-NUS-7101 | - | Yes | &geq; 16 MB | Works
 | Castlevania | Castlevania (E) (M3) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB |Works
-| Conker's Bad Fur Day | Conker's Bad Fur Day (E) [!].z64 | CIC-NUS-7105 | - | Yes | 64 MB |Works. Use 7105.
+| Cruis'n World | Cruis'n World (E) \[f2\].z64 | CIC-NUS-7106 | ??? | ??? | &geq; 16 MB | Untested. Crack changes CIC to 7101.
+| Conker's Bad Fur Day | Conker's Bad Fur Day (E) [!].z64 | CIC-NUS-7105 | - | Yes | 64 MB |Works.
 | Diddy Kong Racing | Diddy Kong Racing (E) (M3) (V1.1) \[f1] (Z64).z64 | CIC-NUS-7103 | No | No | 16 MB |Doesn't work
 | Donkey Kong 64 | Donkey Kong 64 (E) \[f1] (Boot&Save).z64 | CIC-NUS-7105 | No | Yes | &geq; 32 MB | Works. Crack changes CIC to 7101.
+| Excitebike 64 | Excitebike 64 (E) \[!\].z64 | CIC-NUS-7103 | - | Yes | &geq; 16 MB | Works.
+| F-ZERO X | F-ZERO X (E) \[f1\].z64 | CIC-NUS-7106 | ??? | ??? | &geq; 16 MB | Untested. Crack changes CIC to 7101.
 | GoldenEye 007 | GoldenEye 007 (E) [!].z64 | CIC-NUS-7101 | - | No | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise won't boot.
 | Jet Force Gemini | Jet Force Gemini (E) (M4) [f1].z64 | CIC-NUS-7105 | - | Yes | &geq; 32 MB | Works. Use 7105.
-| Kirby: The Crystal Shards | Kirby 64 - The Crystal Shards (E) [f1].z64 | CIC-NUS-7103 | Yes | - | &geq; 32 MB | Works
+| Kirby: The Crystal Shards | Kirby 64 - The Crystal Shards (E) [f1].z64 | CIC-NUS-7103 | Yes | - | &geq; 32 MB | Works. The crack changes the CIC version to 7101.
 | LEGO Racers   | LEGO Racers (E) (M10) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB | Works
-| Mace: The Dark Age | Mace - The Dark Age (E) \[!\].z64 | CIC-NUS-7101 | No | No | &geq; 16 MB | Untested.
+| Lylat Wars (Star Fox 64) | Lylat Wars (E) (M3) \[f1\].z64 | CIC-NUS-7102 | ??? | ??? | &geq; 16 MB | Untested. The crack changes the CIC version to 7101.
+| Mace: The Dark Age | Mace - The Dark Age (E) \[!\].z64 | CIC-NUS-7101 | No | No | &geq; 16 MB | Works.
 | Mario Kart 64 | Mario Kart 64 (E) (V1.0) [!].z64 | CIC-NUS-7101 | No | No | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise won't boot.
 | Mario Party | Mario Party (E) (M3) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 32 MB | Works
 | Mario Party 2 | Mario Party 2 (E) (M5) [!].z64 | CIC-NUS-7101 | No | No | &geq; 32 MB | Doesn't work
 | Mario Party 3 | Mario Party 3 (E) (M4) [!].z64 | CIC-NUS-7101 | - | Yes | &geq; 32 MB | Works
 | Mega Man 64 | Mega Man 64 (U) [t1]\[f1] (PAL-NTSC).z64 | CIC-NUS-7101 | - | Yes | &geq; 32 MB | Works, but lags slightly.
-| Paper Mario | Paper Mario (E) (M4) [!].z64 | CIC-NUS-7103 | - | No | 64 MB | Doesn't work
+| Mickey's Speedway USA | Mickey's Speedway USA (E) (M5) \[!\].z64 | CIC-NUS-7105 | ??? | ??? | &geq; 32 MB | Untested.
+| Paper Mario | Paper Mario (E) (M4) [!].z64 | CIC-NUS-7103 | No | Yes | 64 MB | Works. Use 7103.
 | Perfect Dark | Perfect Dark (E) (M5) [!].z64 | CIC-NUS-7105 | - | Yes | &geq; 32 MB | Works. Use 7105.
 | Pilotwings 64 | Pilotwings 64 (E) (M3) [!].z64 | CIC-NUS-7101 | No | No | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise won't boot.| Rayman 2: The Great Escape | Rayman 2 - The Great Escape (E) (M5) \[f1] (NTSC).z64 | CIC-NUS-7101 | Yes | - | - | Works
+| Pokémon Snap | Pokemon Snap (E) \[!\].z64 | CIC-NUS-7103 | - | Yes | &geq; 16 MB | Works.
+| Pokémon Stadium | Pokemon Stadium (E) (V1.1) \[!\].z64 | CIC-NUS-7103 | - | Yes | &geq; 32 MB | Works.
+| Rayman 2: The Great Escape | Rayman 2 - The Great Escape (E) (M5) \[f1] (NTSC).z64 | CIC-NUS-7101 | Yes | - | - | Works
 | Resident Evil 2 | Resident Evil 2 (E) (M2) [!].z64 | CIC-NUS-7101 | Yes | - | 64 MB | Works
 | Snowboard Kids | Snowboard Kids (E) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB | Works
 | Snowboard Kids 2 | Snowboard Kids 2 (E) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB | Works
@@ -45,3 +54,4 @@ As far as NTSC ROM's are concerned: some games might flicker on a PAL TV. One ma
 | The Legend of Zelda: Ocarina of Time Master Quest | Legend of Zelda, The - Ocarina of Time - Master Quest (E) (GC) \[!\].z64 | CIC-NUS-7105 | ??? | ??? | &geq; 32 MB | Untested.
 | Wave Race 64 | Wave Race 64 (E) (M2) \[!\].z64 | CIC-NUS-7101 | - | - | 16 MB | Requires a repro with no more than 16 MB flash memory. Otherwise gets stuck at Nintendo logo.
 | Worms Armageddon | Worms - Armageddon (E) (M6) [!].z64 | CIC-NUS-7101 | Yes | - | &geq; 16 MB | Works
+| Yoshi's Story | Yoshi's Story (E) (M3) \[!\].z64 | CIC-NUS-7106 | ??? | ??? | &geq; 16 MB | Untested.
