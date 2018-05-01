@@ -1,7 +1,7 @@
 /*
  * Super Mario 64 EEProm editor
  * @author https://github.com/StarHack/
- * Version: 1.0 (Apr 30, 2018)
+ * Version: 1.0.1 (May 1, 2018)
  */
 
 #include <stdlib.h>
@@ -331,7 +331,7 @@ int main(int argc, const char *argv[]) {
               eep[0x23 + (saveSlot * 0x70)] ^= (1UL << 7);
               break;
             case 10:
-              eep[0x37 + (saveSlot * 0x70)] ^= (1UL << 0);
+              eep[0xB + (saveSlot * 0x70)] ^= (1UL << 0);
               break;
           }
         }
@@ -426,7 +426,7 @@ int main(int argc, const char *argv[]) {
     printf("|  7: Mario's Cap Lost: Snowman's Land [%c]                                     |\n", extractFlag(eep[0x9 + (saveSlot * 0x70)], BITMASK_BIT_1));
     printf("|  8: Mario's Cap Lost: Tall, Tall Mountain [%c]                                |\n", extractFlag(eep[0x9 + (saveSlot * 0x70)], BITMASK_BIT_3));
     printf("|  9: Cannon Open In Rainbow Secret [%c]                                        |\n", extractFlag(eep[0x23 + (saveSlot * 0x70)], BITMASK_BIT_8));
-    printf("| 10: Slot Marked As NEW [%c]                                                   |\n", extractFlag(eep[0x37 + (saveSlot * 0x70)], BITMASK_BIT_1));
+    printf("| 10: Slot Marked As NEW [%c]                                                   |\n", extractFlag(~eep[0xB + (saveSlot * 0x70)], BITMASK_BIT_1));
   }
   if(readSound) {
     printf("+------------------------------------------------------------------------------+\n");
@@ -439,7 +439,15 @@ int main(int argc, const char *argv[]) {
 
   printf("+------------------------------------------------------------------------------+\n");
 
+  // compute checksums
+  unsigned int checksum = 0;
+  for(int i=(saveSlot*0x70); i < ((saveSlot*0x70) + 0x36); i++) {
+    checksum += eep[i];
+  }
+  eep[0x36 + (saveSlot*0x70)] = ((checksum & 0xFF00) >> 8);
+  eep[0x37 + (saveSlot*0x70)] = (checksum & 0xFF);
 
+  // write output file
   FILE* fo = fopen(inputFile, "w");
   fwrite(eep, inputLength, 1, fo);
   fclose(fo);
